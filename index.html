@@ -14,6 +14,8 @@
 
     <title>Frontend Mentor | QR code component</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+    
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -27,7 +29,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container" data-aos="zoom-in-up" data-aos-delay="150">
         <div class="qr-code">
             <div class="image">
                 <img src="image-qr-code.png" alt="QR code" />
@@ -42,11 +44,15 @@
         </div>
     </div>
 
-    <div class="attribution">
+    <div class="attribution" data-aos="fade-right">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
